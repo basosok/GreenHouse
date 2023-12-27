@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>GreenHouse Settings</header>
+        <main>
+            <div class="settings-block">
+                <div class="settings-item">
+                    <span>Choose a plant</span>
+                    <div class="dropdown plant-dropdown">
+                        <button class="btn plant-dropdown-btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu"></ul>
+                      </div>
+                </div>
+                <div class="settings-item">
+                    <span>Set date and time</span><br>
+                    <input class="date-input "type="date" value="2023-01-01"><input class="time-input" type="time" value="00:00">
+                </div>
+                <div class="settings-item">
+                    <span>Choose a plan</span>
+                    <div class="dropdown plan-dropdown">
+                        <button class="plan-dropdown-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Auto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item plan-dropdown-item" href="#">Auto</a></li>
+                          <li><a class="dropdown-item plan-dropdown-item" href="#">My plan</a></li>
+                        </ul>
+                      </div>
+                <div class="plan-block hidden">
+                    <h4>My plan</h4>
+                    <div class="plan-item">Humidity, %<input class="plan-item-input" type="number"></div>
+                    <div class="plan-item">Temperature, C<input class="plan-item-input" type="number"></div>
+                    <div class="plan-item">Acidity, pH<input class="plan-item-input" type="number"></div>
+                    <div class="plan-item">Light, lx<input class="plan-item-input" type="number"></div>
+                </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-start"><a href="../emulation/index.html">Start emulation</a></button>
+            </div>
+            <div class="btn-block">
+                <a href="../plan/index.html"><button class="plan-list-btn btn btn-secondary">Plants list</button></a>
+                <button class="system-test-btn btn btn-secondary">System test</button>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="set.js"></script>
+</body>
+</html>

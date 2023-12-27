@@ -1,0 +1,86 @@
+body{
+    background-image: url("../assets/images/bc_start_page.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.btn6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    border: 2px solid #FC5185;
+    font-size: 24px;
+    color: #FC5185;
+    transition: 0.5s;
+    overflow: hidden;
+    outline: none;
+}
+
+.btn6:hover {
+    color: #fff;
+}
+
+.btn6 span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 81, 133, 0.5);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn6 span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+}
+
+.btn6:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.btn6 span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+}
+
+.btn6:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+
+.btn6 span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+}
+
+.btn6:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.btn6 span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+}
+
+.btn6:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    text-transform: uppercase;
+    font-size: 38pt;
+}
